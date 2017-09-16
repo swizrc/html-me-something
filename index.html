@@ -1,1 +1,134 @@
-<p>YOUR NAME</p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css">
+		<title>My First iOS App</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a name="Home"><h1>Aspects of the Foodtracker App</h1></a>
+				<ol>
+					<li><div class="navbutt"><a class="buttlink" href="#Problem">The Problem</a></div></li></br>
+					<li><div class="navbutt"><a class="buttlink" href="#Platform">Choosing the Platform</a></div></li></br>
+					<li><div class="navbutt"><a class="buttlink" href="#Language">The Language</a></div></li></br>
+					<li><div class="navbutt"><a class="buttlink" href="#Frontend">The Frontend</a></div></li></br>
+					<li><div class="navbutt"><a class="buttlink" href="#Backend">The Backend</a></div></li></br>
+				</ol>
+			</nav>
+		</header>
+		
+		<main>
+			<article>
+				<section>
+					<a name="Problem"></a>
+					<h2>The Problem</h2>
+					<p>The main motivation for me making this app was to help my girlfriend meet her goals by providing her a convient and comprehensive application for tracking her caloric and protein intake.</p>
+					
+					<figure>
+						<img src="http://www.syattfitness.com/sf-content/uploads/2015/07/caloriess.jpg" alt="Calorie Counting" height=400 width=400>
+						<figcaption>Counting calories is essential for losing weight. Counting protein is also very important to retain muscle.</figcaption>
+					</figure>
+					
+					<p>The current solution we have is to use a spreadsheet on Google Sheets. Neither of us have that much experience with manipulating sheets and thus we have been adding information by hand to the sheet.</p>
+					
+					<figure>
+						<img src ="Spreadsheet.PNG" alt="Spreadsheet" height=400 width=600">
+						<figcaption>The spreadsheet is ugly and clunky to use.</figcaption>
+					</figure>
+					
+					<p>The current solution we have is to use a spreadsheet on Google Sheets. Neither of us have that much experience with manipulating sheets and thus we have been adding information by hand to the sheet.</p>
+					<p>Dates would be added manually, separation of data was nonexistant. All the data was on one big sheet, which made navigation on an iPhone quite difficult as well.</p>
+					<p>I sought to make something that was more dynamic and fun to use from a mobile perspective. However, having done zero mobile development, I had to start learning a completely different development platform than anything I had seen before.</p>
+					
+					<figure>
+						<img src="https://www.timeshighereducation.com/sites/default/files/iphone_apps.jpg" alt="apps" width=400 height=400>
+						<figcaption>A phone app would be ideal for this application.</figcaption>
+					</figure>
+					
+					<div class="homebutt"><a class="buttlink" href="#Home">Home</a></div>
+				</section>
+				
+				<section>
+				<a name="Platform"></a>
+				<h2>The Platform</h2>
+				<p>I had a choice between two major mobile platforms, iOS and Android. My girlfriend uses an iPhone so that made my choice clear.</p>
+				<p>To develop an app for iOS, Apple expects a developer to own a Mac computer and use their proprietary IDE called Xcode.</p>
+					<figure>
+						<img src="Xcode.png" alt="Xcode" height=400 width=600>
+						<figcaption>Xcode. Mac's iOS IDE.</figcaption>
+					</figure>
+				<p>Seeing as I do not own anything manufactured by Apple, I had to go through a process of obtaining a disk image of OSX and install it for use with a virtual machine using VirtualBox.</p>
+					<figure>
+						<img src="VBox.png" alt="VB" height=400 width=600>
+						<figcaption>My VirtualBox virtual machine that I launch everytime I want to work on the Foodtracker.</figcaption>
+					</figure>
+				<p>With Xcode installed and ready for use on my Windows PC, I then had to learn a brand new language.</p>
+				<div class="homebutt"><a class="buttlink" href="#Home">Home</a></div>
+				</section>
+				
+				<section>
+					<a name="Language"></a>
+					<h2>The Language</h2>
+					<p>Since the launch of iOS, iOS applications have been developed using Objective C. However, within the past few years, Apple developed a new programming language of their own, called Swift&reg;.</p>
+					<p>I chose to learn Swift over Objective C as I thought the syntax was a lot easier to learn and also to take advantage of the new features in Swift over Obj. C, such as optionals.</p>
+						<figure>
+							<img src="swift.png" alt="Swift" height=400 width=1000>
+							<figcaption>A new language for iOS development.</figcaption>
+						</figure>
+					<p>By nature, mobile development is heavily based on object-oriented programming. While I have had some experience with OOP in the past with C++, my experience was limited before tackling this project.</p>
+					<p>Learning Swift and it's intricacies has been a very rewarding endeavour, but also a very difficult one; probably far more difficult than the entire scope of LC101.</p>
+						<figure>
+							<img src="http://www.assignmenthelp.net/assignment_help/images/class-oops.jpg" alt="OOP" height=400 width=600>
+							<figcaption>Knowledge of OOP was crucial for this project.</figcaption>
+						</figure>
+					<p>While the Foodtracker app is still in progress, the standard framework is already established.</p>
+					<div class="homebutt"><a class="buttlink" href="#Home">Home</a></div>
+				</section>
+				
+				<section>
+					<a name="Frontend"></a>
+					<h2>The Front-End</h2>
+					<p>Designing the front end user interface is fairly intuitive. One could programmatically create all the view and elements an application would have in theory, but that would be a huge waste of time.</p>
+					<p>A big part of Swift is called The Storyboard. The user interface can be designed here using drag and drop elements, as well as establishing connections between these elements for dynamic interations.</p>
+						<figure>
+							<img src="Storyboard.png" alt="Story" height=400 width=600>
+							<figcaption>The Storyboard is crucial for visualizing the application from a user's perspective.</figcaption>
+						</figure>
+					<p>The nodes seen comprising this storyboard as the views that the user sees.</p>
+					<p>In my application, the user will mostly see tables of elements that they will tap on to make a selection, such as selecting which user they are, which date they want to modify food for, viewing a certain food's details, etc.</p>
+						<figure>
+							<img src="FrontEnd1.png" alt="Front">
+							<figcaption>The view that shows when a user wants to add food to a table or edit an existing food item.</figcaption>
+						</figure>
+					<p>While much of the front end can be made with the storyboard, I had to create a lot of back end programming that makes the backbone of the Foodtracker app.</p>
+					<div class="homebutt"><a class="buttlink" href="#Home">Home</a></div>
+				</section>
+				
+				<section>
+					<a name="Backend"></a>
+					<h2>The Back-End</h2>
+					<p>The back end of the app has a huge amount of elements to it, many of them I have never encountered before this project.</p>
+					<p>Much of the new concepts has to do with interfacing Swift code with the elements created in the storyboard. One must create something called "outlets" connected to storyboard elements one wants to manipulate in code.</br> 
+					For example, if I want to change some text in a text label element, I need to let the back end know that such a label exists before I change it's text.</p>
+					<p>All views on the storyboard are their own encapsulated class. The views do not know of each other and must pass data between them through transistions, known as segues.</p>
+					<p>Passing data forwards and backwards from views is an essential part in the operation of this app's data handling as every view will process the data in a different meaningful way.</p>
+						<figure>
+							<img src="Backend1.png" alt="Backend">
+							<figcaption>The Storyboard is crucial for visualizing the application from a user's perspective.</figcaption>
+						</figure>
+					<p>Much work has been done on this app, but there is still much more to be done. I have shared just an entry in my journey of developing my first iOS application, dedicated to someone I love very dearly.</p>
+					<figure>
+						<img id="JessMe" src="JessMe.jpg" alt="Me+Jess" height=400 width=600 rotate="90">
+						<figcaption>Thank you, Jess, I love you!</figcaption>
+					</figure>
+					<div class="homebutt"><a class="buttlink" href="#Home">Home</a></div>
+				</section>
+			</article>
+		</main>
+		
+		<footer>
+			<p>&copy; 2017 Samuel Itschner</p>
+		</footer>
+	</body>
+</html>
